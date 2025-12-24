@@ -1,4 +1,5 @@
 # Single-Cycle-RISCV-On-FPGA
+*Kindly Read the Project Report "RISCV_on_FPGA.pdf" to know all about project.*
 
 ## File Guide
 
