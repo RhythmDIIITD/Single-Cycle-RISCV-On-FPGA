@@ -47,7 +47,7 @@ always @(*) begin
 
     case (Opcode)
 
-        // ================= R-type =================
+ 
         7'b0110011: begin
             RegWrite = 1'b1;
             ALUSRC   = 1'b0;
@@ -65,7 +65,7 @@ always @(*) begin
             endcase
         end
 
-        // ================= lw =================
+      
         7'b0000011: begin
             RegWrite   = 1'b1;
             ALUSRC     = 1'b1;
@@ -74,7 +74,7 @@ always @(*) begin
             ALUControl = 3'b010;  // ADD
         end
 
-        // ================= sw =================
+ 
         7'b0100011: begin
             Data_Mem_WE = 1'b1;
             ALUSRC      = 1'b1;
@@ -82,7 +82,7 @@ always @(*) begin
             ALUControl  = 3'b010; // ADD
         end
 
-        // ================= beq =================
+    
         7'b1100011: begin
             Branch     = 1'b1;
             ALUSRC     = 1'b0;
@@ -90,7 +90,7 @@ always @(*) begin
             ALUControl = 3'b110;  // SUB
         end
 
-        // ================= addi =================
+
         7'b0010011: begin
             RegWrite   = 1'b1;
             ALUSRC     = 1'b1;
@@ -99,7 +99,7 @@ always @(*) begin
             ALUControl = 3'b010;  // ADD
         end
 
-        // ================= custom rst =================
+
         7'b1111111: begin
             Rst = 1'b1;
         end
