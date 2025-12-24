@@ -2,6 +2,9 @@
 
 ## File Guide
 
+- **Files ending in .v**  
+  Contain Verilog code of respective modules
+
 - **Branch_Programme.txt**  
   Contains the binary programme to test branch, reset, and addi instructions.
 
